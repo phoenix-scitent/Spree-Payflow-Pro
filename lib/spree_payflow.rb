@@ -1,5 +1,5 @@
 require 'spree_core'
-require 'spree_payflow_hooks'
+# require 'spree_payflow_hooks'
 
 module SpreePayflow
   class Engine < Rails::Engine
