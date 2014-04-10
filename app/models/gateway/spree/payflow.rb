@@ -1,11 +1,9 @@
-module Spree
-  class Gateway::Payflow < Gateway
-    preference :login, :string
-    preference :password, :password
-    preference :partner, :string
+class Spree::Gateway::Payflow < Gateway
+  preference :login, :string
+  preference :password, :password
+  preference :partner, :string
 
-    def provider_class
-      ActiveMerchant::Billing::PayflowGateway
-    end
+  def provider_class
+    ActiveMerchant::Billing::PayflowGateway
   end
 end
