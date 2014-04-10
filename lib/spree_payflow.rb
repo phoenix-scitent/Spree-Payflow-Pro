@@ -17,7 +17,7 @@ module SpreePayflow
         Rails.env.production? ? require(c) : load(c)
       end
       
-      Gateway::Payflow.register
+      Spree::Gateway::Payflow.register
     end
 
     config.to_prepare &method(:activate).to_proc
