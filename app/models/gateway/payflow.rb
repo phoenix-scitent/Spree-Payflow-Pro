@@ -1,4 +1,4 @@
-class Spree::Gateway::Payflow < Gateway
+class Gateway::Payflow < Gateway
   preference :login, :string
   preference :password, :password
   preference :partner, :string
